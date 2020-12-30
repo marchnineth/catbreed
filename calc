@@ -1,0 +1,76 @@
+# 01 definiton of each calc
+def plus(a,b):
+  return a+b
+  try:
+    a = int(a)
+    b = int(b)
+  except:
+    print("Check the number again")
+
+def minus(a,b):
+  return a-b
+  try:
+    a=int(a)
+    b=int(b)
+  except:
+    print("Check the number again")
+
+def times(a,b):
+  return a*b
+  try:
+    a=int(a)
+    b=int(b)
+  except:
+    print("Check the number again")
+
+def division(a,b):
+  if b == 0:
+    print("Sorry zero can't divide anything")
+  else:
+    int(a)
+    int(b)
+    return a/b
+
+def power(a,b):
+  return a ** b
+  try:
+    a=int(a)
+    b=int(b)
+  except:
+    print("Check the number again")
+
+def remainder(a,b):
+  return a%b
+  try:
+    a=int(a)
+    b=int(b)
+  except:
+    print("Check the number again")
+
+# 02 definiton of main calculator
+
+def calculator():
+  a = input("Choose your first number to calculate : ")
+  b = input("Choose your second number to calculate : ")
+  cal = input("Choose one of the calcurate metrics, such as +,-,*,/,**,% : ")
+  a = int(a)
+  b = int(b)
+  if cal == "+":
+    return plus(a,b)
+  elif cal == "-":
+    return minus(a,b)
+  elif cal == "*":
+    return times(a,b)
+  elif cal == "/":
+    return division(a,b)
+  elif cal == "**":
+    return power(a,b)
+  elif cal == "%":
+    return remainder(a,b)
+  else:
+    print("check your number again")
+
+# 03 print the result
+
+r_calculator = calculator()
+print(r_calculator)
